@@ -102,12 +102,12 @@ const paintToDo = (text) => {
   }
 };
 
-function handleSubmit(event) {
+const handleSubmit = (event) => {
   event.preventDefault();
   const currentValue = toDoInput.value;
   toDoInput.value = "";
   paintToDo(currentValue);
-}
+};
 
 const init = () => {
   loadToDos();
